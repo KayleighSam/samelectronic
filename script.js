@@ -11,7 +11,7 @@ const fetchProducts = () => {
 };
 
 // ---------------Add a new product-----------------------------------------
-const addForm = document.getElementById("add_post_form");
+const addForm = document.getElementById("add_electronic_form");
 addForm.addEventListener("submit", (event) => {
     event.preventDefault();
 
@@ -22,7 +22,7 @@ addForm.addEventListener("submit", (event) => {
     const date = document.getElementById("date").value;
     const quantity = document.getElementById("quantity").value;
     fetch(dbUrl, {
-        method: 'POST',
+        method: 'electronic',
         headers: {
             'Content-type': 'application/json; charset=UTF-8',
         },
@@ -65,7 +65,7 @@ const displayProducts = (products) => {
                     <p class="card-text">quantity:  ${product.quantity}</p>
                     <button class="btn btn-primary view-details" data-id="${product.id}">View Details</button>
 
-<button onclick="editPost('${(product.id)}')" class="btn btn-warning ">Update</buton>
+<button onclick="editelectronic('${(product.id)}')" class="btn btn-warning ">Update</buton>
 
                     <button class="btn btn-danger delete-product" data-id="${product.id}">Delete</button>
                 </div>
@@ -140,7 +140,7 @@ const viewProductDetails = (productId) => {
 
 // ---------------Edit a product--------------------
 
-function editPost(id)
+function editelectronic(id)
 {
   fetch(`https://samelectronic.onrender.com/products/${id}`)
   .then((res) => res.json())
@@ -153,7 +153,7 @@ function editPost(id)
                 <div id="update_message" class="text-success" role="alert">
                        
                 </div>
-                <form id="update_post_form">
+                <form id="update_electronic_form">
                   <div class="mb-3">
                    <lable></lable> <input type="text" class="form-control" id="edit_title" value="${data.title}" required placeholder="Title" >
                   </div>
@@ -184,7 +184,7 @@ function editPost(id)
                 
     `
     //---------------------------updating the records--------------
-    const edit_form = document.getElementById("update_post_form");
+    const edit_form = document.getElementById("update_electronic_form");
 
     edit_form.addEventListener("submit", (event)=>{
         event.preventDefault();
@@ -215,7 +215,7 @@ function editPost(id)
           .then((response) => response.json())
           .then((res) => {
             const update_message = document.getElementById("update_message");
-            update_message.innerText = "Post Updated Successfully"
+            update_message.innerText = "electronic Updated Successfully"
   
             
           });
@@ -269,4 +269,3 @@ fetchProducts();
             });
     });
     
-
