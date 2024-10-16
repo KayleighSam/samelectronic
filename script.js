@@ -1,5 +1,5 @@
 // ---------------Define the API base URL---------------------------
-const dbUrl = 'http://localhost:3000/products';
+const dbUrl = 'https://samelectronic.onrender.com/products';
 
 
 // ----------------Fetch products and display them-------------------
@@ -85,7 +85,7 @@ const displayProducts = (products) => {
 
 
 
-    const dbUrl = 'http://localhost:3000/products'; // Path to your db.json file
+    const dbUrl = 'https://samelectronic.onrender.com/products'; // Path to your db.json file
 
     // --------------Function to fetch and calculate total quantity-----------
     const fetchTotalQuantity = async () => {
@@ -142,7 +142,7 @@ const viewProductDetails = (productId) => {
 
 function editPost(id)
 {
-  fetch(`http://localhost:3000/products/${id}`)
+  fetch(`https://samelectronic.onrender.com/products/${id}`)
   .then((res) => res.json())
   .then((data) => {
 
@@ -196,7 +196,7 @@ function editPost(id)
         const quantity = document.getElementById("edit_quantity").value;
   
   
-        fetch(`http://localhost:3000/products/${id}`, {
+        fetch(`https://samelectronic.onrender.com/products/${id}`, {
           method: 'PATCH',
           body: JSON.stringify({
             title: title,
