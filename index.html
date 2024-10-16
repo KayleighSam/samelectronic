@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAM-ELECTRONICS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  
+<header class="bg-primary text-white text-center py-3">
+  <h1><a class="navbar-brand" href="#"><img src="https://www.nicepng.com/png/detail/882-8824950_png-file-svg-ecommerce-shopping-icon.png" style="width:5%;"/></a>SAM -ELECTRONICS</h1>
+</header>
+
+<!-- Navbar Section -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                  <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+<!--Bootstrap  Banner Slider Section -->
+<div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+      <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+      <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2"></button>
+  </div>
+  <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="https://e0.pxfuel.com/wallpapers/33/835/desktop-wallpaper-wordpress-is-a-crap-for-e-commerce-e-commerce.jpg" class="d-block w-100" alt="Slide 1">
+          <div class="carousel-caption d-none d-md-block">
+              <p>"Powering Your Life with the Best Electronics!"</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="https://media.licdn.com/dms/image/D4D12AQE-0upCneQutA/article-cover_image-shrink_720_1280/0/1716384813163?e=2147483647&v=beta&t=2slLht9OBdccye7B0wcSPbrM189QB4mwY7LB5hWlrHQ" class="d-block w-100" alt="Slide 2">
+          <div class="carousel-caption d-none d-md-block">
+              <p>"Where Quality Electronics Meet Great Deals!"</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="https://c4.wallpaperflare.com/wallpaper/784/118/362/technology-digital-art-wallpaper-preview.jpg" class="d-block w-100" alt="Slide 3">
+          <div class="carousel-caption d-none d-md-block">
+              <p>"Your Favorite Brands, at the Best Prices!"</p>
+          </div>
+      </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+<!--  Welcome pannel, also where tabulation of total electronics displays -->
+<div class="hero">
+  <h3>Welcome Admin to the Administrative Dashboard</h3>
+  </div>
+  <div class="hero">
+  <h2>Total Electronics stock </h2>
+  
+      <i class="fas fa-box quantity-icon"></i>
+      <span id="totalQuantity" class="h2">0</span>
+  
+</div>
+
+
+<!----- Button to Open Modal for adding electronics products ---->
+<div class="container mt-5">
+    <h1>Add Electronics Product</h1>
+
+    <!-- Button to Open the Modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addProductModal">
+      Add New Product
+    </button>
+ <!---------------------- EDIT SECTION ---------------->
+ <div id="edit_container" class=" mx-auto mt-2 p-3" style="width: 50vw; background-color: white;">
+  <!---------- Update form will appear here ----------->
+</div>
+    <!---------------------- Modal ------------->
+    <div class="modal fade" id="addProductModal" tabindex="-1" aria-labelledby="addProductModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="addProductModalLabel">Add New Product</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!---form to add new products-->
+            <form id="add_post_form">
+              <div class="mb-3">
+                <label for="productTitle" class="form-label">Product Title</label>
+                <input type="text" class="form-control" id="title" required>
+              </div>
+              <div class="mb-3">
+                <label for="productDescription" class="form-label">Product Description</label>
+                <textarea class="form-control" id="description" rows="3" required></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="productPrice" class="form-label">Product Price</label>
+                <input type="number" class="form-control" id="price" required>
+              </div>
+              <div class="mb-3">
+                <label for="productImage" class="form-label">Product Image</label>
+                <input type="text" class="form-control" id="image" required>
+              </div>
+              <div class="mb-3">
+                <label for="productDate" class="form-label">Date</label>
+                <input type="date" class="form-control" id="date" required>
+              </div>
+              <div class="mb-3">
+                <label for="productQuantity" class="form-label">Quantity</label>
+                <input type="number" class="form-control" id="quantity" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Add Product</button>
+              <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- -------------------Search Bar------------------------------ -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-12">
+                <input type="text" id="searchInput" class="form-control" placeholder="Search for products...">
+            </div>
+        </div>
+    </div>
+    
+
+ 
+    <!-- -----------------------Product Listing section-------------------- -->
+    <div class="container mt-4">
+        <div class="row" id="productList"></div>
+    </div>
+
+    <!------------------------ Product Detail Modal --------------------------->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">Product Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="product-detail-content">
+                        <img id="modalProductImage" src="" class="img-fluid" alt="Product Image">
+                        <h4 id="modalProductTitle">T</h4>
+                        <p id="modalProductDescription"></p>
+                        <p id="modalProductPrice"></p>
+                        <p id="modalProductDate"></p>
+                        <p id="modalProductQuantity"></p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+  
+   
+<!-- --------------------Footer Section -------------------------->
+<footer class="footer" id="contact">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-4 col-md-6">
+              <h5>Contact Us</h5>
+              <p><i class="fas fa-phone-alt"></i> 0728231511</p>
+              <p><i class="fas fa-envelope"></i> info@samelectronics.com</p>
+              <p><i class="fas fa-map-marker-alt"></i> Thika, Kiambu</p>
+          </div>
+
+      <div class="row mt-4" >
+          <div class="col text-center">
+              <p>&copy; 2024 Sam-Electronics Store. All Rights Reserved.</p>
+          </div>
+      </div>
+  </div>
+</footer>
+  <!------------------ bootstrap js---------------- -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./script.js"></script>
+<!-- ----------------Font Awesome for Icons ------------->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</body>
+</html>
