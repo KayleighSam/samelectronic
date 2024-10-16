@@ -37,13 +37,12 @@ npx json-server db.json
 --Open the HTML file in a web browser to access the application.
 
 Usage
-After running JSON Server, open your browser and navigate to http://localhost:3000/ to view the products.
 
 Use the provided forms to add new products,edit/update, view products or deletes the products 
 Monitor inventory levels  through the UI.
 
 ## Website live link
-
+https://kayleighsam.github.io/samelectronic/
 
 ## Support and Contact Details
 For any issues or questions, please contact me via GitHub.
