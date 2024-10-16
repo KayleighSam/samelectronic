@@ -45,7 +45,7 @@ Monitor inventory levels  through the UI.
 https://kayleighsam.github.io/samelectronic/
 
 ## Support and Contact Details
-For any issues or questions, please contact me via GitHub.
+For any issues or questions, please contact me via [GitHub](https://github.com/KayleighSam).
 
 ## License
 The content of this project is licensed under the MIT License.
