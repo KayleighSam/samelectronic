@@ -27,7 +27,7 @@ JSON Server: To serve the db.json file.
 Installation Instructions
 
 --Clone the repository:
-git@github.com:KayleighSam/samelectronic.git
+[git@github.com:KayleighSam/samelectronic.git](https://github.com/KayleighSam/samelectronic)
 
 --Install JSON Server globally (if you haven't installed it yet):
 
