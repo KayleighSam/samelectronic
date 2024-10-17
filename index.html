@@ -96,9 +96,29 @@
       Add New Product
     </button>
  <!---------------------- EDIT SECTION ---------------->
- <div id="edit_container" class=" mx-auto mt-2 p-3" style="width: 50vw; background-color: white;">
-  <!---------- Update form will appear here ----------->
+<!-- Button to trigger modal -->
+
+
+<!-- Modal Structure -->
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editModalLabel">Edit Electronic record</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="edit_container" class="p-3">
+          <!-- Update form will appear here (dynamically loaded from db.json) -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
+
     <!---------------------- Modal ------------->
     <div class="modal fade" id="addProductModal" tabindex="-1" aria-labelledby="addProductModalLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -171,7 +191,7 @@
                 <div class="modal-body">
                     <div class="product-detail-content">
                         <img id="modalProductImage" src="" class="img-fluid" alt="Product Image">
-                        <h4 id="modalProductTitle">T</h4>
+                        <h4 id="modalProductTitle"></h4>
                         <p id="modalProductDescription"></p>
                         <p id="modalProductPrice"></p>
                         <p id="modalProductDate"></p>

@@ -65,7 +65,11 @@ const displayProducts = (products) => {
                     <p class="card-text">quantity:  ${product.quantity}</p>
                     <button class="btn btn-primary view-details" data-id="${product.id}">View Details</button>
 
-<button onclick="editelectronic('${(product.id)}')" class="btn btn-warning ">Update</buton>
+
+
+<button onclick="editelectronic('${(product.id)}')"type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editModal" style="background:orange;">
+  Update
+</button>
 
                     <button class="btn btn-danger delete-product" data-id="${product.id}">Delete</button>
                 </div>
