@@ -27,7 +27,7 @@ JSON Server: To serve the db.json file.
 Installation Instructions
 
 --Clone the repository:
-git clone https://github.com/yourusername/electronic-stock-inventory.
+git@github.com:KayleighSam/samelectronic.git
 
 --Install JSON Server globally (if you haven't installed it yet):
 
