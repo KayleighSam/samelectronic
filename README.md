@@ -42,7 +42,7 @@ Use the provided forms to add new products,edit/update, view products or deletes
 Monitor inventory levels  through the UI.
 
 ## Website live link
-https://kayleighsam.github.io/samelectronic/
+[https://kayleighsam.github.io/samelectronic/](https://kayleighsam.github.io/samelectronic/)
 
 ## Support and Contact Details
 For any issues or questions, please contact me via [GitHub](https://github.com/KayleighSam).
