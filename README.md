@@ -30,6 +30,8 @@ Installation Instructions
 [git@github.com:KayleighSam/samelectronic.git](https://github.com/KayleighSam/samelectronic)
 
 --Install JSON Server globally (if you haven't installed it yet):
+## Render Links
+https://samelectronic.onrender.com
 
 npm install -g json-server
 --Run JSON Server to serve the db.json file:
