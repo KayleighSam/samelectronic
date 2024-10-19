@@ -3,51 +3,47 @@ Date: 16/10/2024
 
 #### By *Samson Mwaura Wanjiru*
 ## Description
-This project is an Electronic Stock and Inventory Management System (MIS) that allows users to manage products, adding,edit/update,delete and view  products  inventory levels.
-The system is built using db.json for data storage, styled with CSS,Bootstrap, enhanced with JavaScript for interactivity, and utilizes Font Awesome for icons.
-
-## Features
---Product Management: Add, update, and delete products from the inventory.
---Inventory Tracking: View current stock levels, including quantity and details of each product.
---Search Functionality: Easily search products by title.
-
-##  ## Technologies used
-HTML: Structure of the web pages.
-CSS: Styling the application for a better user experience.
-JavaScript: Adding interactivity and functionality to the application.
-Font Awesome: Providing vector icons for better UI elements.
-JSON Server: For simulating a REST API using db.json for data storage.
-
-##  Installation
-To install this project, you can clone the repository from GitHub.
+The application includes a  landing page with some navigations  showing operations of electronic stock management, i.e., viewing electronic components and their details, and tabs to view, add, edit/update, search, and delete electronic products. This report also shows my project live link, render link for the database, my GitHub account, and my contact information. 
 
 ## Installation Requirements
 Git: For cloning the repository.
 JSON Server: To serve the db.json file.
-Installation Instructions
 
---Clone the repository:
-[git@github.com:KayleighSam/samelectronic.git](https://github.com/KayleighSam/samelectronic)
+## Setup/Installation Instruction
+* Download a zip in the code button to the desired folder
+* Extract the files
+* Open the extracted folder with VSCode
+* Go live or open the index.html file with chrome
+* And you are all done
+--Alternatively, you can:
+* Clone the repository:
+git clone: https://github.com/KayleighSam/samelectronic
+* Install JSON Server globally (if you haven't installed it yet):
+  - npm install -g json-server
+* Run JSON Server to serve the db.json file:
+  - npx json-server db.json
+* Open the HTML file in a web browser to access the application.
 
---Install JSON Server globally (if you haven't installed it yet):
-## Render Links
-https://samelectronic.onrender.com
+## Available Links
+ * You can view the web live on: https://kayleighsam.github.io/samelectronic/
 
-npm install -g json-server
---Run JSON Server to serve the db.json file:
-npx json-server db.json
---Open the HTML file in a web browser to access the application.
+* You can view the Json server/ Render live on: https://samelectronic.onrender.com
 
-Usage
+* You can view my Presentations slides on: https://docs.google.com/presentation/d/1TZeoxUUa5qjGveZRE4nHUtKZTD8SgEsjk-iE_Mtc7C4/edit?usp=drive_link
 
-Use the provided forms to add new products,edit/update, view products or deletes the products 
-Monitor inventory levels  through the UI.
+* You can view my video  Presentation on : https://drive.google.com/file/d/1mYkaM1XxRuSU8u_kg7Gb13QpFvvjcOlQ/view?usp=drive_link
 
-## Website live link
-[https://kayleighsam.github.io/samelectronic/](https://kayleighsam.github.io/samelectronic/)
+## Known Bugs
+The application works perfectly well, no bugs.
+
+## Technologies Used
+HTML, CSS ,  Javascript, Bootsrap, Json server Fontawesome icons, GIT
 
 ## Support and Contact Details
-For any issues or questions, please contact me via [GitHub](https://github.com/KayleighSam).
+Please contact me via [GitHub](https://github.com/KayleighSam) for any issues or questions.
 
+email :: 1samemepire@gmail.com
 ## License
 The content of this project is licensed under the MIT License.
+
+Copyright (c) 2024 *Samson Mwaura Wanjiru *
