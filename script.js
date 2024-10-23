@@ -87,27 +87,28 @@ const displayProducts = (products) => {
         });
     });
 
+};
 
-
-    const dbUrl = 'https://samelectronic.onrender.com/products'; // Path to your db.json file
+    // Path to your db.json file
 
     // --------------Function to fetch and calculate total quantity-----------
     const fetchTotalQuantity = async () => {
         try {
+            const dbUrl = 'https://samelectronic.onrender.com/products'; 
             const response = await fetch(dbUrl);
             const products = await response.json();
             
             //----------Calculate total quantity------------
             const totalQuantity = products.reduce((acc, product) => acc + Number(product.quantity), 0);
-
             
             //----------- Update the quantity in the HTML--------------
             document.getElementById('totalQuantity').innerText = totalQuantity;
+            console.log('test');
         } catch (error) {
             console.error('Error fetching the products:', error);
         }
     };
-
+    
     // Call the function to fetch total quantity when the page loads
     window.onload = fetchTotalQuantity;
   
@@ -118,7 +119,7 @@ const displayProducts = (products) => {
             deleteProduct(productId);
         });
     });
-};
+
 
 // ---------------------------View product details----------------
 const viewProductDetails = (productId) => {
